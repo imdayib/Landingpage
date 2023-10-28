@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5%;
+  background-color: #2fc67a;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.1s ease-in;
+}
+nav ul li a {
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  background-color: #092d66;
+  border-radius: 5px;
+}
+nav ul li a:hover {
+  color: white;
+}
+.heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+/*content*/
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% 5%;
+}
+.line .slide1 {
+  padding-right: 50px;
+}
+.slide1 h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: #092d66;
+}
+.slide1 button {
+  width: 200px;
+  padding: 12px 20px;
+  border-radius: 20px;
+  color: black;
+  border-style: none;
+  font-size: 17px;
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.slide1 button:hover {
+  background-color: #092d66;
+  color: white;
+}
+@media screen and (max-width: 900px) {
+  .slide2 img {
+    width: 350px;
+  }
+  .slide1 h1 {
+    font-size: 40px;
+  }
+  .slide1 p {
+    font-size: 17px;
+  }
+  .line {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .slide1 h1 {
+    font-size: 35px;
+  }
+  .line {
+    flex-direction: column;
+  }
+  .line .slide1 {
+    padding: 30px;
+  }
+}
+/*section*/
+section .topic a {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.about .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about .boxes .box {
+  margin: 10px 20px;
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 20px;
+  cursor: default;
+  max-width: calc(100% / 3 - 50px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}
+@media screen and (max-width:600px){
+  .slide2 img{
+    width: 100%;
+  }
+  section .topic a{
+    font-size: 20px;
+  }
+  section .topic p{
+    font-size: 5px;
+    text-align: center;
+  }
+  .about .boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .boxes .box{
+    max-width:70%;
+  }
+}
+
+/*content*/
+.contact{
+  padding: 20px;
+}
+.contact .content{
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.content .title{
+  width: 80%;
+  text-align: center;
+  font-weight: bolder;
+  color: #092d66;
+  font-size: 40px;
+}
+.title {
+  margin-bottom: 30px;
+  margin-left: 80px;
+}
+.contactMenu{
+  display: flex;
+  justify-content: space-evenly;
+}
+.input2{
+  margin-top: 10;
+}
+.label1{
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: bolder;
+}
+.contactMenu .input1 input{
+  border-radius: 13px;
+  padding: 6px;
+}
+.input2 input{
+  border-color: rgb(252, 244, 244);
+  width: 400px;
+}
+.button{
+  margin-top: 12px;
+  margin-left: 5px;
+}
+.button button{
+  width: 162px;
+  height: 35px;
+  border-radius: 12px;
+  border-color: transparent;
+}
+.slide1 button:hover,
+.button button:hover{
+  background-color: #092d66;
+  color: white;
+}
+.rightslide1{
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.title1{
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+.content1{
+  width: 450px;
+  margin-top: 2px;
+  color: gray;
+}
+@media screen and(max-width:1020px) {
+  .contactMenu{
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightslide1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .content1{
+    width: 100%;
+    margin-top: 2px;
+    color: gray;
+  }
+  .slide2 img{
+    width: 95%;
+    height: 90%;
+  }
+}
+
+/*footer*/
+footer{
+  padding: 15px 0;
+  text-align: center;
+  font-family:"Poppins", sans-serif; 
+}
+footer .footer span{
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+}
+footer .footer span a{
+  font-weight: 500;
+  color: #092d66;
+}
+footer .footer span a:hover{
+  text-decoration: none;
+}
+
+
